@@ -39,3 +39,5 @@ std::string unique(std::string s) {
     }
     return str;
 }
+
+int char_2_int(char c) { return c - '0'; }
