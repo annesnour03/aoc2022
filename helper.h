@@ -40,4 +40,14 @@ std::string unique(std::string s) {
     return str;
 }
 
+std::string join(const std::vector<std::string>& lst, const std::string& delim) {
+    std::string ret;
+    for (const auto& s : lst) {
+        if (!ret.empty())
+            ret += delim;
+        ret += s;
+    }
+    return ret;
+}
+
 int char_2_int(char c) { return c - '0'; }
